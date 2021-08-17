@@ -12,9 +12,9 @@ namespace CakeShopBotique.Models
         [Display(Name = "Category Name")]
         public string CategoryName { get; set; }////Birthday, wedding, kids, adults...
 
-        public List<Product> products { get; set; }
+        public List<Product> Products { get; set; }
 
-        public Image image { get; set; }
+        public Image Image { get; set; }
 
     }
 }

@@ -13,11 +13,12 @@ namespace CakeShopBotique.Models
     {
         public enum ProductType
         {
-            LargeCake,
-            MediumCake,
-            SmallCake,
-            Muffin,
-            SpecialDessert
+            BirthdayAdults,
+            BirthdayKids,
+            Wedding,
+            Fur,
+            Milk,
+            GlutenFree
         }
 
         [Required]
@@ -26,7 +27,7 @@ namespace CakeShopBotique.Models
 
 
         [Required]
-        public int Category { get; set; }//Birthday, wedding, kids, adults...
+        public string Category { get; set; }//Birthday, wedding, kids, adults...
 
         [Required]
         [Display(Name = "Cake Name")]

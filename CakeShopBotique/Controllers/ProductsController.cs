@@ -54,7 +54,7 @@ namespace CakeShopBotique.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Category,ProductName,Price,Description,Type,StoreQuantity")] Product product)
+        public async Task<IActionResult> Create([Bind("Id,Category,ProductName,Price,Description,Type")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace CakeShopBotique.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Category,ProductName,Price,Description,Type,StoreQuantity")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Category,ProductName,Price,Description,Type")] Product product)
         {
             if (id != product.Id)
             {

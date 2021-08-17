@@ -19,5 +19,17 @@ namespace CakeShopBotique.Data
         public DbSet<CakeShopBotique.Models.Category> Category { get; set; }
 
         public DbSet<CakeShopBotique.Models.Image> Image { get; set; }
+
+        public DbSet<CakeShopBotique.Models.Costumer> Costumer { get; set; }
+
+        public DbSet<CakeShopBotique.Models.Purchase> Purchase { get; set; }
+
+        public DbSet<CakeShopBotique.Models.Shipping> Shipping { get; set; }
+
+        public DbSet<CakeShopBotique.Models.ShopBag> ShopBag { get; set; }
+
+        public DbSet<CakeShopBotique.Models.ShopBagProduct> ShopBagProduct { get; set; }
+
+        public DbSet<CakeShopBotique.Models.SildeBanner> SildeBanner { get; set; }
     }
 }

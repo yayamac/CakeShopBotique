@@ -9,13 +9,12 @@ namespace CakeShopBotique.Models
     {
         public enum ImageType
         {
-            BirtdhayAdults,
+            BirthdayAdults,
             BirthdayKids,
             Wedding,
-            Girls,
-            Boys,
-            Profile,
-            Category
+            Fur,
+            Milk,
+            GlutenFree
         }
 
         public int Id { get; set; }
